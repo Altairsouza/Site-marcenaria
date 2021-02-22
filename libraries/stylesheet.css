@@ -1,0 +1,171 @@
+*{box-sizing: border-box;}
+body{margin: 0; padding: 0;   }
+header{width: 100%;float: left;}
+main{width: 100%;float: left;}
+footer{width: 100%;float: left;}
+ul{margin: 0; padding: 0; list-style: none;}
+nav{float: left; width:100%;font-weight: bold; font-family: verdana,sans-serif; color: #ffffff;}/* font-weight=negrito */
+    nav li{float: left; cursor: pointer;}
+    nav li a{color: #ffffff;text-decoration: none;}
+.ind-topo{float: left; width: 100%;background: #000000;}
+.ind-logo{position:absolute; width:25%;left: 0;top: 0;text-align: center;z-index: 2;}
+.ind-slide{float: left; width: 100%;z-index: 1; }/* z-idex pra nao deixar o meu logan por baixo da minha animção de imagem primeiro a minha imagem z-index:1; e depois a animação z-index:2; */
+        .ind-slide img{ width: 100%; }
+        .ind-slide picture{ width: 100%; }
+.ind-anuncio{float: left;  margin: 30px 2.5% 20px 2.5%; font-family: Verdana, sans-serif;font-size: 16px;}
+
+
+
+
+
+
+/* Smartphone */
+@media only screen and (max-width: 480px){
+    nav li{width:100%;display: none;background: #A9CF46; height: 30px;padding-top: 10px;padding-bottom: 10px;padding-left: 10%;border-bottom: 1px #ffffff solid; color: #333333;}/* display none pra aparecer só o menu e nada de aparecer os nomes como por exemplo(home, sobre nos etc)  */
+    nav li:first-child{margin-top: 1px;}/* o ultimo muda a cor esse aqui vai se o cadastra-se */
+    .ind-topo{height: 50px;}
+    .ind-botao{position: absolute; width: 65%; top:3px; right: 0; cursor: pointer; padding-right: 10%; text-align: right;}   /* configuração para o menu interativo */ 
+    
+    .ind-logo img{margin-top:3px; max-height: 40px;}/* o maximo dela é de 100% q nao vai utrapassar os 25% ind-logo */
+    .ind-slide{height: 200px;}
+    .ind-slide img{ max-height:200px ;}
+    .ind-anuncio{width:95%; height:200px;}
+   
+
+   
+.Footer{float: left; width: 100%; background: red;border-top:20px solid tomato; font-family:verdana,sans-serif;font-size: 17px;line-height:35px ;}
+    .footertexto{float: left; width:90%;margin:20px 5%;text-align: center;;}
+    .footerimage{float: left; width: 100%;text-align: center;}
+
+.ind-banner{float: left;width: 100%;}
+        .ind-banner img{ width: 100%;}
+
+.textoresponsivo{float: left;width: 90%;margin:20px 5% 40px 5%;text-align: justify;line-height: 35px;font-size: 18px;font-family: verdana,sans-serif;}
+        .textoresponsivo img{max-width: 100%;}/* caso queira colocar uma imagem muito grande, ela nao vai ultrapassar os 100% do texto resposivo */   
+        
+        
+.formulario{float: left; width: 100%;margin: 20px 0;}
+    .formulario input[type=text],.formulario input[type=email],.formulario input[type=tel]{width: 100%;height:30px ;}
+    .formulario input[type=submit]{width: 50%;height: 50px;cursor: pointer; background:#333 ;color: #fff;font-weight: bold;font-size:21px ;}  
+    
+    .formulario textarea{width: 100%;height: 150px;font-size: 18px;font-family: verdana,sans-serif;color: #444;}      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    nav li{ width: 100%;display: none;background: #a9cf46;height: 30px;padding-top: 10px;padding-bottom: 10px;padding-left: 10%;border-bottom: 1px #ffffff solid;color: #333333;cursor: pointer;}/* display none pra aparecer só o menu e nada de aparecer os nomes como por exemplo(home, sobre nos etc)  */
+    nav li:first-child{margin-top: 1px;}
+.ind-topo{height: 60px;}
+.ind-botao{position: absolute; width: 65%; top:9px; right: 0; cursor: pointer; padding-right: 10%; text-align: right; }/* configuração para o menu interativo */
+
+    
+.ind-logo img{margin-top: 3px; max-height: 50px;}/* o maximo dela é de 100% q nao vai utrapassar os 25% ind-logo */  
+.ind-slide {height: 200px;}  
+    .ind-slide img{ max-height:200px ;}
+.ind-anuncio{width:40%; height:100px; margin-bottom: 210px;}    
+.ind-anuncio-title{float:left;width: 100%;padding: 10px 0; text-align: center; color: white; background: black; font-weight: bold;}
+.ind-anuncio-image{float:left;width: 100%;}
+    .ind-anuncio-image img{width: 100%;}
+.ind-anuncio-texto{float: left; width: 100%; padding: 10px; text-align: center; line-height: 25px;}     /* line-height vai aumentar o distanciamento das linhas das palavras */  
+
+
+
+
+
+.Footer{float: left; width: 100%; background: red;padding: 20px;border-top:20px solid tomato; font-family:verdana,sans-serif;font-size: 17px;line-height:35px ;}
+    .footertexto{float: left; width:100%;text-align: center;margin-bottom: 20px;}
+    .footerimage{float: left; width: 100%;text-align: center;}
+
+
+
+.ind-banner{float: left;width: 100%;}
+    .ind-banner img{ width: 100%;}
+
+
+.textoresponsivo{float: left;width: 90%;margin:20px 5% 40px 5%;text-align: justify;line-height: 50px;font-size: 18px;font-family: verdana,sans-serif;}
+    .textoresponsivo img{max-width: 100%;}/* caso queira colocar uma imagem muito grande, ela nao vai ultrapassar os 100% do texto resposivo */
+
+    .formulario{float: left; width: 100%;margin: 20px 0;}
+    .formulario input[type=text],.formulario input[type=email],.formulario input[type=tel]{width: 70%;height:30px ;}
+    .formulario input[type=submit]{width: 35%;height: 50px;cursor: pointer; background:#333 ;color: #fff;font-weight: bold;font-size:21px ;}   
+    
+    .formulario textarea{width: 70%;height: 150px;font-size: 18px;font-family: verdana,sans-serif;color: #444;}  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* desktop */
+@media only screen and (min-width: 769px){
+    nav{position: absolute;padding-left: 25%;}
+    nav li{width: 20%; padding-top:20px;text-align: center;}
+    nav li:last-child a{color: brown;}/* o ultimo muda a cor esse aqui vai se o cadastra-se */
+    nav li:hover{border-top: 7px solid red; 
+    -webkit-transition: all 0.7s ease; /* transition serve pra fazer animação aqui por exemplo ele vai hover de cima e vai fazer o border-top aparecer lentamente */
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;  }
+    nav li:hover a{color: red; }
+
+
+
+
+
+
+
+    .ind-topo{height: 60px;}
+    .ind-botao{display: none;} /* esse botao nao vai aparecer em desktop  */
+    
+    .ind-logo img{max-width: 100%;max-height: 100px;}
+
+.ind-slide {height: 450px;}
+    .ind-slide img{ max-height:450px ;}
+.ind-anuncio{width:20%; height:300px;padding: 50px;margin-top: 100px;}
+
+.ind-anuncio-title{float:left;width: 100%;padding: 10px 0; text-align: center; color: white; background: black; font-weight: bold;}
+.ind-anuncio-image{float:left;width: 100%;;}
+    .ind-anuncio-image img{width: 100%;}
+.ind-anuncio-texto{float: left; width: 100%; padding: 10px; text-align: center; line-height: 25px;margin-bottom: 50px;}     /* line-height vai aumentar o distanciamento das linhas das palavras */  
+
+
+
+
+
+
+
+.Footer{float: left; width: 100%; background: red;padding: 20px;border-top:10px solid tomato; font-family:verdana,sans-serif;font-size: 17px;line-height:35px ;margin-top: 300px;}
+    .footertexto{float: left;margin-left: 5%; width: 60%;}
+    .footerimage{float: left;margin-right: 5%; width: 30%;text-align: right;}
+
+.ind-banner{float: left;width: 100%;}
+        .ind-banner img{ width: 100%;height: 500px;}
+.textoresponsivo{float: left;width: 90%;margin:20px 5% 40px 5%;text-align: justify;line-height: 35px;font-size: 18px;font-family: verdana,sans-serif;}
+    .textoresponsivo img{max-width: 100%;}/* caso queira colocar uma imagem muito grande, ela nao vai ultrapassar os 100% do texto resposivo */
+
+.formulario{float: left; width: 100%;margin: 20px 0;}
+    .formulario input[type=text],.formulario input[type=email],.formulario input[type=tel]{width: 70%;height:30px ;font-size:18px ;color: #444;}
+    .formulario input[type=submit]{width: 25%;height: 50px;cursor: pointer; background:#333 ;color: #fff;font-weight: bold;font-size:21px ;}
+     .formulario textarea{width: 70%;height: 150px;font-size: 18px;font-family: verdana,sans-serif;color: #444;}   
+
+}
+
